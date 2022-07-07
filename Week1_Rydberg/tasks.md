@@ -75,7 +75,7 @@ $$ |\psi_0\rangle$$,
 and then addibaitcally go the ground sate of the full  Hamiltonain
 $$ |\psi_g\rangle= e^{-i\int_{t_0}^{t_f}\left(\frac{\Omega}{2}f(t)\sum_{i\in V}\sigma_i^x-g(t)(\delta\sum_{i\in V}n_i+\sum_{i>j}V_{ij}n_in_j)\right)dt}|\psi_0\rangle.$$
 
-The state $|\psi_g\rangle$ is populated with differnet protein folds and the one with high-probality is conidered the stable folds. It is multi objective optimization, and solves for a solution space in a multivariate set up.
+The state $|\psi_g\rangle$ is populated with differnet protein folds and the one with high-probality is conidered the stable folds. It is multi objective optimization, and solves for a solution space in a multivariate set up. We can also encode molecular-docking as an optimization in the the Ryberg-Hamiltonian. In 
 
 
 
@@ -84,20 +84,22 @@ Finally, use your simulations to solve a groundstate encoding problem for an ind
 ### Once you are comfortable with the above tasks, you may turn to one or more of the below optional **Challenges** for any time remaining in your project. 
 
 ## Challenge 1:
+
+One we map the protein-folding problem to the Ryberg-Hamiltonian, we can simualte the ground state with MPS as well. It would be 
+
+
+
 To push your classical simulations further, consider using a tensor-network based method (such as Matrix Product States), implemented in [iTensor](https://itensor.org) or [PastaQ](https://github.com/GTorlai/PastaQ.jl). To time-evolve a quantum state under the dynamics of the Rydberg Hamiltonian, the simplest method is to use "time evolving block decimation" (TEBD). This is the procedure of decomposing the time-evolution operator into a circuit of quantum gates (two-site unitaries) using the Trotter-Suzuki approximation and applying these gates to the tensor network state. See tutorials [here](https://docs.juliahub.com/ITensors/P3pqL/0.2.0/getting_started/Tutorials.html#Getting-Started-with-MPS-Time-Evolution-1).
 
 Implement TEBD using the blockade approximation (see Task 2). Benchmark your tensor network against the results from Bloqade, then repeat for larger 1D arrays.  How large can you trust your results using tensor networks? How does this compare with current experimental capabilities?  Can you prepare a 2D state of size comparable to current experiments? If tensor networks are state-of-the-art, what do they imply about *quantum advantage* in Rydberg devices?
 
 ## Challenge 2:
+The protien-folding is already implemented using QAOA. It is intersting to lo 
 In addition to adiabatic protocols, other state preparation protocols are currently being explored on quantum computing hardware.  A leading variational protocol is the Quantum Approximate Optimization Algorithm ([QAOA](https://queracomputing.github.io/Bloqade.jl/dev/tutorials/4.MIS/main/#QAOA-with-Piecewise-Constant-Pulses)), in which time evolution occurs via rapidly switching between a cost and mixer Hamiltonian.  For your problems above, particularly your Business Application, attempt a QAOA solution and compare your results to the adiabatic approach.
 
-## Challenge 3:
 
-As laid out in the [preprint](https://arxiv.org/abs/2205.08500), there are other applications of Rydberg atom arrays to industry problems, that may require quantum machine learning, quantum sampling algorithms, or other techniques. Explore one of these further applications using your numerical strategies above.
+It would be intersting to simulate the same problem with MPS, RH, QAOA, QA. 
 
-## Challenge 4:
-
-Rydberg atom quantum computers are not the only hardware available to solve MIS and related problems. By employing a suitable mapping (e.g. to a QUBO Hamiltonian), solve any version of your problems using any available quantum hardware, e.g. D-Wave or IBM. Compare and contrast the quantum solutions to the classical simulations that you have employed above.
 
 
 
