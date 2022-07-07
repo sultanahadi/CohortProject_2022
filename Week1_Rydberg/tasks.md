@@ -1,5 +1,4 @@
-
-[CDL 2022 Cohort Project](../CDL_logo.jpg)
+![CDL 2022 Cohort Project](../CDL_logo.jpg)
 # Project 1: INSTRUCTIONS
 
 
