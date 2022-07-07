@@ -57,7 +57,7 @@ Following the Bloqade tutorial [script](https://github.com/QuEraComputing/Bloqad
 ## Task 4: Business applications
 
 
-We can write the problem Hamiltonian [](https://arxiv.org/abs/1811.00713) as
+We can write the problem  [Hamiltonian](https://arxiv.org/abs/1811.00713) as
 $$ H_I= H_{\text{pair}}+H_{\text{penalty}}.$$
 where $ H_{\text{pair}}$ encodes the  interaction between different acids, valid interaction, and $H_{\text{penalty}}$ penalizes the unwanted amino-acid fold, and the the full Hamiltonian is the sum of a non-interacting and the interacting part
 \be\label{pro} H= H_{\text{free}}+ H_{\text{pair}}+H_{\text{penalty}}.\ee
