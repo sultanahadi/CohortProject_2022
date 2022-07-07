@@ -56,9 +56,9 @@ Following the Bloqade tutorial [script](https://github.com/QuEraComputing/Bloqad
 
 ## Task 4: Business applications
 
+[Arun, Check the language]
 
-Protein is a sequence of amino-acid. In the protein folding problem, one is given a sequence on 1D, unfolded protein, based on its interactions with each other and outside, one has to find how it becomes functions, folds to a 3D shape. Protein folding is crucial for designing new therapeutics. In general, protein folding is NP-hard. Quantum promises to provide speedup for an optimization problem. Protein folding is an optimization problem, and we expect that quantum computers can speed up the process.  There has been ongoing work to experimentally show speed for useful application of quantum speed up for the optimization is one of them. 
-There has been some work of designing Quantum algorithms for protein folding problems  \cite{robert2021resource,fingerhuth2018quantum}, which has indicated speed up on quantum computers. 
+Protein is a sequence of amino-acid. In the protein folding problem, one is given a sequence on 1D, unfolded protein, based on its interactions with each other and outside, one has to find how it becomes functions, folds to a 3D shape. Protein folding is crucial for designing new therapeutics. In general, protein folding is NP-hard. Quantum promises to provide speedup for an optimization problem. Protein folding is an optimization problem, and we expect that quantum computers can speed up the process.  There has been ongoing work to experimentally show speed for useful application of quantum speed up for the optimization is one of them.  There has been some work of designing Quantum algorithms for protein folding problems, that has indicated speed up on quantum computers. 
 
 We can write the problem  Hamiltonian [[1]](https://arxiv.org/abs/1811.00713) as
 $$ H_I= H_{\text{pair}}+H_{\text{penalty}}.$$
@@ -71,9 +71,11 @@ $$ H_{\text{free}}\rightarrow -\delta\sum_{i\in V}n_i, $$
 $$ H_{\text{pair}}+H_{\text{penalty}}\rightarrow \sum_{i>j}V_{ij}n_in_j. $$
 
 The problem is to start in the ground-state of $\sum_{i\in V}\sigma_i^x$, 
-$$ |\psi_0\rangle$$
-$$ |\psi_g\rangle= e^{-i\int_{t_0}^{t_f}\left(\frac{\Omega}{2}f(t)\sum_{i\in V}\sigma_i^x-g(t)(\delta\sum_{i\in V}n_i+\sum_{i>j}V_{ij}n_in_j)\right)dt}|\psi_0\rangle$$
+$$ |\psi_0\rangle$$,
+and then addibaitcally go the ground sate of the full  Hamiltonain
+$$ |\psi_g\rangle= e^{-i\int_{t_0}^{t_f}\left(\frac{\Omega}{2}f(t)\sum_{i\in V}\sigma_i^x-g(t)(\delta\sum_{i\in V}n_i+\sum_{i>j}V_{ij}n_in_j)\right)dt}|\psi_0\rangle.$$
 
+The state $|\psi_g\rangle$ is populated with differnet protein folds and the one with high-probality is conidered the stable folds. It is multi objective optimization, and solves for a solution space in a multivariate set up.
 
 
 
