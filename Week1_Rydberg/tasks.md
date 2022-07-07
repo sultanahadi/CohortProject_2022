@@ -1,5 +1,5 @@
 ![CDL 2022 Cohort Project](../CDL_logo.jpg)
-# Project 1: INSTRUCTIONS
+# Project 1: solutions
 
 
 ## Modelling Rydberg atom arrays
@@ -27,6 +27,8 @@ Then, final (target) states are prepared by slowly tuning $\delta(t)/\Omega(t)$ 
 Let's explore state preparation protocols on this neutral atom quantum computer. Below are series of Tasks and optional Challenges for each team to attempt.
 
 ## Task 1: Adiabatic state preparation with Bloqade
+
+
 
 Our first task will be to prepare an [experimentally motivated](https://www.nature.com/articles/nature24622) ordered state consisting of alternating ground and Rydberg states in a one-dimensional (1D) chain, the so-called $\mathbb{Z}_2$ state: $$ |\psi \rangle = | g \hspace{1mm} r \hspace{1mm} g \hspace{1mm} r \hspace{1mm} g \hspace{1mm} r  \cdots \rangle.$$
 To get us started, we will use the open-source simulation software [Bloqade](https://github.com/QuEraComputing/Bloqade.jl) to prepare the $\mathbb{Z}_2$ state of a one-dimensional chain of 9 atoms with open boundary conditions.  In order to prepare this state, follow the Bloqade [tutorial](https://queracomputing.github.io/Bloqade.jl/dev/tutorials/2.adiabatic/main/#Preparation-of-Ordered-States-in-1D):
