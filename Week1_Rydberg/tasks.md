@@ -27,6 +27,17 @@ Then, final (target) states are prepared by slowly tuning $\delta(t)/\Omega(t)$ 
 Let's explore state preparation protocols on this neutral atom quantum computer. Below are series of Tasks and optional Challenges for each team to attempt.
 
 ## Task 1: Adiabatic state preparation with Bloqade
+We can write the problem Hamiltonian \cite{PerdomoOrtiz2012FindingLC,babej2018coarse,boulebnane2022peptide} as
+$$ H_I= H_{\text{pair}}+H_{\text{penalty}}.$$
+where $ H_{\text{pair}}$ encodes the  interaction between different acids, valid interaction, and $H_{\text{penalty}}$ penalizes the unwanted amino-acid fold, and the the full Hamiltonian is the sum of a non-interacting and the interacting part
+\be\label{pro} H= H_{\text{free}}+ H_{\text{pair}}+H_{\text{penalty}}.\ee
+The ground state of $H$ gives us the string with valid protein folds. To solve this problem with Rydberg-Hamiltonian, we have to map it that Hamiltonian. The  Rydberg-Hamiltonian is 
+$$ H= \frac{\Omega}{2}\sum_{i\in V}\sigma_i^x-\delta\sum_{i\in V}n_i+\sum_{i>j}V_{ij}n_in_j.$$ 
+We map 
+$$ H_{\text{free}}\rightarrow -\delta\sum_{i\in V}n_i, $$
+$$ H_{\text{pair}}+H_{\text{penalty}}\rightarrow \sum_{i>j}V_{ij}n_in_j. $$
+
+The problem is to start in the ground-state of $\sum_i\in$
 
 
 
