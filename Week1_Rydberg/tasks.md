@@ -72,7 +72,7 @@ $$ H_{\text{pair}}+H_{\text{penalty}}\rightarrow \sum_{i>j}V_{ij}n_in_j. $$
 
 The problem is to start in the ground-state of $\sum_{i\in V}\sigma_i^x$, 
 $$ |\psi_0\rangle$$
-$$ |\psi_g\rangle= e^{-i\int_{t_0}^{t_f}\frac{\Omega}{2}\sum_{i\in V}\sigma_i^x-\delta\sum_{i\in V}n_i+\sum_{i>j}V_{ij}n_in_j}|\psi_0\rangle$$
+$$ |\psi_g\rangle= e^{-i\int_{t_0}^{t_f}\left(\frac{\Omega}{2}f(t)\sum_{i\in V}\sigma_i^x-g(t)(\delta\sum_{i\in V}n_i+\sum_{i>j}V_{ij}n_in_j)\right)}|\psi_0\rangle$$
 
 
 
