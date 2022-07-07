@@ -75,6 +75,8 @@ $$ |\psi_0\rangle$$,
 and then addibaitcally go the ground sate of the full  Hamiltonain
 $$ |\psi_g\rangle= e^{-i\int_{t_0}^{t_f}\left(\frac{\Omega}{2}f(t)\sum_{i\in V}\sigma_i^x-g(t)(\delta\sum_{i\in V}n_i+\sum_{i>j}V_{ij}n_in_j)\right)dt}|\psi_0\rangle.$$
 
+[Explain]
+
 The state $|\psi_g\rangle$ is populated with differnet protein folds and the one with high-probality is conidered the stable folds. It is multi objective optimization, and solves for a solution space in a multivariate set up. We can also encode molecular-docking as an optimization in the the Ryberg-Hamiltonian. In 
 
 
