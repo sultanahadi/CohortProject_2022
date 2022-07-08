@@ -60,7 +60,7 @@ Following the Bloqade tutorial [script](https://github.com/QuEraComputing/Bloqad
 
 Protein is a sequence of amino-acid. In the protein folding problem, one is given a sequence on 1D, unfolded protein, based on its interactions with each other and outside, one has to find how it becomes functions, folds to a 3D shape. Protein folding is crucial for designing new therapeutics. In general, protein folding is NP-hard. Quantum promises to provide speedup for an optimization problem. Protein folding is an optimization problem, and we expect that quantum computers can speed up the process.  There has been ongoing work to experimentally show speed for useful application of quantum speed up for the optimization is one of them.  There has been some work of designing Quantum algorithms for protein folding problems, that has indicated speed up on quantum computers. 
 
-We can write the problem  Hamiltonian [[1]](https://arxiv.org/abs/1811.00713) as
+We can write the problem  Hamiltonian [[1][2]](https://arxiv.org/abs/1811.00713,https://www.nature.com/articles/srep00571.pdf) as
 $$ H_I= H_{\text{pair}}+H_{\text{penalty}}.$$
 where $ H_{\text{pair}}$ encodes the  interaction between different acids, valid interaction, and $H_{\text{penalty}}$ penalizes the unwanted amino-acid fold, and the the full Hamiltonian is the sum of a non-interacting and the interacting part
 $$\label{pro} H= H_{\text{free}}+ H_{\text{pair}}+H_{\text{penalty}}.$$
