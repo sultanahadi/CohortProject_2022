@@ -58,7 +58,7 @@ Following the Bloqade tutorial [script](https://github.com/QuEraComputing/Bloqad
 
 For industrial application, we have looked at Protein-folding. Protein is a sequence of amino-acid. In the protein folding problem, one is given a sequence on 1D, unfolded protein, based on its interactions with each other and outside, one has to find how it becomes functions, folds to a 3D shape. Protein folding is crucial for designing new therapeutics. In general, protein folding is NP-hard. Quantum promises to provide speedup for an optimization problem. Protein folding is an optimization problem, and we expect that quantum computers can speed up the process.  There has been ongoing work to experimentally show speed for useful application of quantum speed up for the optimization is one of them.  There has been some work of designing Quantum algorithms for protein folding problems, that has indicated speed up on quantum computers. 
 
-We can write the problem  Hamiltonian [[1][2]](https://arxiv.org/abs/1811.00713,https://www.nature.com/articles/srep00571.pdf) as
+We can write the problem  Hamiltonian [[1][2][3]](https://arxiv.org/abs/1811.00713,https://www.nature.com/articles/srep00571.pdf,https://arxiv.org/pdf/2205.06084.pdf) as
 $$ H_I= H_{\text{pair}}+H_{\text{penalty}}$$
 where $ H_{\text{pair}}$ encodes the interaction between different acids, valid interaction, and $H_{\text{penalty}}$ penalizes the unwanted amino-acid fold, and the the full Hamiltonian is the sum of a non-interacting and the interacting part
 $$\label{pro} H= H_{\text{free}}+ H_{\text{pair}}+H_{\text{penalty}}.$$
@@ -83,9 +83,9 @@ Finally, use your simulations to solve a groundstate encoding problem for an ind
 
 ### Once you are comfortable with the above tasks, you may turn to one or more of the below optional **Challenges** for any time remaining in your project. 
 
-## Challenge 1:
+## Challenge 1: Proteing-folding with MPS
 
-The protein-folding problem that is mapped to the Ryberg-Hamiltonian can be simulated using MPS. The time-evolution can be discretized.
+The protein-folding problem that is mapped to the Ryberg-Hamiltonian can be simulated using MPS. The time evolution can be discretized and further approximated by Troterization. One can check against the performance Ryberg devices aginst MPS simulation. Since MPS is considered the best classical simulatuion method for simulating the ground state of 1D Hamiltonian and if MPS fails to do do what Ryberg devices do, then one can calim Qunatum advantage with Ryberg devices. We are the first to suggest to siumulate Proteing-folding with MPS. 
 
 
 
