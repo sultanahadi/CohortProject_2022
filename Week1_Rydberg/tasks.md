@@ -56,13 +56,11 @@ Following the Bloqade tutorial [script](https://github.com/QuEraComputing/Bloqad
 
 ## Task 4: Business applications
 
-[Arun, Check the language]
-
-Protein is a sequence of amino-acid. In the protein folding problem, one is given a sequence on 1D, unfolded protein, based on its interactions with each other and outside, one has to find how it becomes functions, folds to a 3D shape. Protein folding is crucial for designing new therapeutics. In general, protein folding is NP-hard. Quantum promises to provide speedup for an optimization problem. Protein folding is an optimization problem, and we expect that quantum computers can speed up the process.  There has been ongoing work to experimentally show speed for useful application of quantum speed up for the optimization is one of them.  There has been some work of designing Quantum algorithms for protein folding problems, that has indicated speed up on quantum computers. 
+For industrial application, we have looked at Protein-folding. Protein is a sequence of amino-acid. In the protein folding problem, one is given a sequence on 1D, unfolded protein, based on its interactions with each other and outside, one has to find how it becomes functions, folds to a 3D shape. Protein folding is crucial for designing new therapeutics. In general, protein folding is NP-hard. Quantum promises to provide speedup for an optimization problem. Protein folding is an optimization problem, and we expect that quantum computers can speed up the process.  There has been ongoing work to experimentally show speed for useful application of quantum speed up for the optimization is one of them.  There has been some work of designing Quantum algorithms for protein folding problems, that has indicated speed up on quantum computers. 
 
 We can write the problem  Hamiltonian [[1][2]](https://arxiv.org/abs/1811.00713,https://www.nature.com/articles/srep00571.pdf) as
-$$ H_I= H_{\text{pair}}+H_{\text{penalty}}.$$
-where $ H_{\text{pair}}$ encodes the  interaction between different acids, valid interaction, and $H_{\text{penalty}}$ penalizes the unwanted amino-acid fold, and the the full Hamiltonian is the sum of a non-interacting and the interacting part
+$$ H_I= H_{\text{pair}}+H_{\text{penalty}}$$
+where $ H_{\text{pair}}$ encodes the interaction between different acids, valid interaction, and $H_{\text{penalty}}$ penalizes the unwanted amino-acid fold, and the the full Hamiltonian is the sum of a non-interacting and the interacting part
 $$\label{pro} H= H_{\text{free}}+ H_{\text{pair}}+H_{\text{penalty}}.$$
 The ground state of $H$ gives us the string with valid protein folds. To solve this problem with Rydberg-Hamiltonian, we have to map it that Hamiltonian. The  Rydberg-Hamiltonian is 
 $$ H= \frac{\Omega}{2}\sum_{i\in V}\sigma_i^x-\delta\sum_{i\in V}n_i+\sum_{i>j}V_{ij}n_in_j.$$ 
@@ -75,7 +73,7 @@ $$ |\psi_0\rangle$$,
 and then addibaitcally go the ground sate of the full  Hamiltonain
 $$ |\psi_g\rangle= e^{-i\int_{t_0}^{t_f}\left(\frac{\Omega}{2}f(t)\sum_{i\in V}\sigma_i^x-g(t)(\delta\sum_{i\in V}n_i+\sum_{i>j}V_{ij}n_in_j)\right)dt}|\psi_0\rangle.$$
 
-[Explain]
+The function $f(t) and $g(t) for the adibatic protocoal is define such that at $t_0$ the state $|\psi_0\rangle$, and at time $t_f$ one gets $\psi_g\rangle.$  Note $e^{-i\int_{t_0}^{t_f}\left(\frac{\Omega}{2}f(t)\sum_{i\in V}\sigma_i^x-g(t)(\delta\sum_{i\in V}n_i+\sum_{i>j}V_{ij}n_in_j)\right)dt}$ can be discretized. 
 
 The state $|\psi_g\rangle$ is populated with differnet protein folds and the one with high-probality is conidered the stable folds. It is multi objective optimization, and solves for a solution space in a multivariate set up. We can also encode molecular-docking as an optimization in the the Ryberg-Hamiltonian. In 
 
@@ -87,7 +85,7 @@ Finally, use your simulations to solve a groundstate encoding problem for an ind
 
 ## Challenge 1:
 
-One we map the protein-folding problem to the Ryberg-Hamiltonian, we can simualte the ground state with MPS as well. It would be 
+The protein-folding problem that is mapped to the Ryberg-Hamiltonian can be simulated using MPS. The time-evolution can be discretized.
 
 
 
